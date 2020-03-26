@@ -25,6 +25,8 @@ body {
 .nav { /*engloba o a ul (menu)*/
 }
 
+
+
 .menu { /* engloba cada item da lista (li) */
     display: flex;
 }
@@ -38,6 +40,9 @@ body {
     font-size: 21px;
     text-decoration: none;
     color: #FFF;
+}
+.nav__menu-btn{
+    display: none;
 }
 
 .text { /* engloba o title h1 e o subtitle p */
@@ -92,3 +97,11 @@ body {
     margin: 42px 120px;
 }
 
+@media screen and (max-width : 860px){
+    .nav{
+        display: none;
+    }
+    .nav__menu-btn{
+       display: block;
+   }
+}
