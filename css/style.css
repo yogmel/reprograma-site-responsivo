@@ -1,8 +1,17 @@
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
 
-.header { /*engloba a imagem e a nav*/
+p {
+    font-size: 1.6rem;
+}
+
+.header {
+    /*engloba a imagem e a nav*/
     padding: 40px 130px;
     background: url(../images/header.png) no-repeat center center / cover;
     /* mesma coisa:
@@ -13,6 +22,7 @@ body {
     */
     height: 730px;
     width: 100%;
+    max-width: 1410px;
     display: flex;
     flex-direction: column;
 }
@@ -22,48 +32,64 @@ body {
     justify-content: space-between;
 }
 
-.nav { /*engloba o a ul (menu)*/
+.logo {
+    max-width: 51px;
+    max-height: 49px;
 }
 
-.menu { /* engloba cada item da lista (li) */
+.menu {
+    /* engloba cada item da lista (li) */
     display: flex;
 }
 
-.menu__item { /*engloba o link*/
+.menu__item {
+    /*engloba o link*/
     margin: 0 16px;
     padding: 8px;
 }
 
 .menu__item__link {
-    font-size: 21px;
+    font-size: 2.1rem;
     text-decoration: none;
     color: #FFF;
 }
 
-.text { /* engloba o title h1 e o subtitle p */
+.menu__item-btn {
+    display: none;
+}
+
+.text {
+    /* engloba o title h1 e o subtitle p */
     color: #FFF;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     margin-top: auto;
 }
 
-.text__title { /* é irmão do text__subtitle */
-    font-size: 72px;
+.text__title {
+    /* é irmão do text__subtitle */
+    font-size: 7.2rem;
 }
 
-.text__subtitle { /* é irmão do text__title */
-    font-size: 24px;
-    width: 400px;
-    margin-bottom: 34px; /* adiciona margem abaixo do elemento subtitulo */
+.text__subtitle {
+    /* é irmão do text__title */
+    font-size: 2.4rem;
+    max-width: 400px;
+    margin-bottom: 34px;
+    /* adiciona margem abaixo do elemento subtitulo */
 }
 
 .btn {
-    text-transform: uppercase; /* transforma todas as letras em letras maiusculas */
-    font-size: 18px;
+    text-transform: uppercase;
+    /* transforma todas as letras em letras maiusculas */
+    font-size: 1.8rem;
     border-radius: 28px;
     padding: 16px 45px;
     text-decoration: none;
-    font-weight: 600; /* deixa a letra mais grossa */
-    display: inline-block; /* transforma o link em um elemento
+    font-weight: 600;
+    /* deixa a letra mais grossa */
+    display: inline-block;
+    /* transforma o link em um elemento
     inline-block, sem isso o link será inline e ficaria 
     tomando espaço do título */
 }
@@ -71,24 +97,58 @@ body {
 .btn__primary {
     color: #7E459B;
     background: #FFF;
-    margin-right: 22px; /* adiciona margem ao lado direito do elemento */
+    margin-right: 22px;
+    /* adiciona margem ao lado direito do elemento */
 }
 
 .btn__secondary {
-    background: rgba(0, 0, 0, 0); /* deixa o fundo transparente */
+    background: rgba(0, 0, 0, 0);
+    /* deixa o fundo transparente */
     border: 2px solid #FFF;
     color: #FFF;
+    margin-top: 20px;
 }
 
 .box {
-    width: 500px;
+    max-width: 500px;
 }
 
 .box--right {
     margin-left: auto;
+    padding: 20px;
 }
 
 .box__icons {
+    max-width: 1410px;
     margin: 42px 120px;
+    display: flex;
+    flex-direction: column;
 }
 
+.box__icon {
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        padding: 4rem;
+    }
+    .menu__item-btn {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .box__icons {
+        flex-direction: column;
+        margin: 0;
+        padding: 3rem;
+    }
+    .box--right {
+        padding: 0px;
+    }
+    .text__title {
+        font-size: 3rem;
+    }
+}
