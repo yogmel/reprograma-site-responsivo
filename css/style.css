@@ -1,9 +1,20 @@
+html{
+    font-size: 10px;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
 
+p {
+    font-size: 1.6rem;
+}
+
+button {
+    font-size: 1.6rem;
+}
 .header { /*engloba a imagem e a nav*/
-    padding: 40px 130px;
+    padding: 4rem 130px;
     background: url(../images/header.png) no-repeat center center / cover;
     /* mesma coisa:
     background-image: url(../img/header.png);
@@ -24,6 +35,11 @@ body {
 
 .nav { /*engloba o a ul (menu)*/
 }
+
+.nav__menu-btn {
+    display: block;
+}   
+  
 
 .menu { /* engloba cada item da lista (li) */
     display: flex;
@@ -47,12 +63,12 @@ body {
 }
 
 .text__title { /* é irmão do text__subtitle */
-    font-size: 72px;
+    font-size: 7.2rem;
 }
 
 .text__subtitle { /* é irmão do text__title */
     font-size: 24px;
-    width: 400px;
+    max-width: 400px;
     margin-bottom: 34px; /* adiciona margem abaixo do elemento subtitulo */
 }
 
@@ -81,7 +97,7 @@ body {
 }
 
 .box {
-    width: 500px;
+    max-width: 500px;
 }
 
 .box--right {
@@ -91,4 +107,21 @@ body {
 .box__icons {
     margin: 42px 120px;
 }
+
+@media screen and (max-width: 800px) {
+
+html {
+   font-size: 8px;
+}
+.nav__menu-btn {
+    display: block;
+}      
+.nav {
+    display: none;
+}
+}
+
+
+    
+    
 
