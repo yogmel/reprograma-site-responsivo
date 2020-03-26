@@ -25,6 +25,10 @@ body {
 .nav { /*engloba o a ul (menu)*/
 }
 
+.nav__menu-btn {
+    display: none;
+}
+
 .menu { /* engloba cada item da lista (li) */
     display: flex;
 }
@@ -92,3 +96,12 @@ body {
     margin: 42px 120px;
 }
 
+@media screen and (max-width: 832px) {
+    .nav__menu-btn {
+        display: block;
+        justify-content: center;
+    }
+    .menu__item__link {
+        display: none;
+    }
+}
