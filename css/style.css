@@ -50,7 +50,7 @@ body {
 }
 
 .text__title { /* é irmão do text__subtitle */
-    font-size: 5rem;
+    font-size: 72px;
 }
 
 .text__subtitle { /* é irmão do text__title */
@@ -108,6 +108,6 @@ body {
      padding-top: 30px;
     }
     .text__title{
-        font-size: 28px;
+        font-size: 35px;
     }
 }
