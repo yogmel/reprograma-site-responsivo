@@ -1,9 +1,15 @@
+
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: 'Lato', sans-serif;
+    max-width: 100%;
 }
 
 .header { /*engloba a imagem e a nav*/
-    padding: 40px 130px;
+    padding: 4rem 13rem;
     background: url(../images/header.png) no-repeat center center / cover;
     /* mesma coisa:
     background-image: url(../img/header.png);
@@ -11,10 +17,14 @@ body {
     background-position-y: center;
     background-size: cover;
     */
-    height: 730px;
-    width: 100%;
+    min-height: 730px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+p {
+    font-size: 1.6rem;
 }
 
 .wrapper {
@@ -23,6 +33,12 @@ body {
 }
 
 .nav { /*engloba o a ul (menu)*/
+
+
+}
+
+.nav__btn {
+    display:none
 }
 
 .menu { /* engloba cada item da lista (li) */
@@ -42,7 +58,7 @@ body {
 
 .text { /* engloba o title h1 e o subtitle p */
     color: #FFF;
-    width: 400px;
+    max-width: 400px;
     margin-top: auto;
 }
 
@@ -58,7 +74,7 @@ body {
 
 .btn {
     text-transform: uppercase; /* transforma todas as letras em letras maiusculas */
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 28px;
     padding: 16px 45px;
     text-decoration: none;
@@ -80,6 +96,11 @@ body {
     color: #FFF;
 }
 
+.main {
+max-width: 100%;
+
+}
+
 .box {
     width: 500px;
 }
@@ -90,5 +111,41 @@ body {
 
 .box__icons {
     margin: 42px 120px;
+}
+
+@media screen and (max-width:700px) {
+
+body {
+    margin-left: 0;  
+}
+
+.nav__btn {
+    display:block;
+}
+
+.nav { /*engloba o a ul (menu)*/
+display: block;
+}
+
+.menu__item {
+    display: none;
+}
+
+.text__title{ 
+    color: #FFF;
+    max-width: 400px;
+    margin-bottom: 10px;
+ 
+}
+
+.text__subtitle {
+
+}
+
+.header {
+    padding: 4rem;
+}
+
+
 }
 
