@@ -39,20 +39,23 @@ body {
     text-decoration: none;
     color: #FFF;
 }
+.nav__menu-btn{
+    display: none;
+}
 
 .text { /* engloba o title h1 e o subtitle p */
     color: #FFF;
-    width: 400px;
+    max-width: 400px;
     margin-top: auto;
 }
 
 .text__title { /* é irmão do text__subtitle */
-    font-size: 72px;
+    font-size: 5rem;
 }
 
 .text__subtitle { /* é irmão do text__title */
     font-size: 24px;
-    width: 400px;
+    max-width: 400px;
     margin-bottom: 34px; /* adiciona margem abaixo do elemento subtitulo */
 }
 
@@ -89,6 +92,22 @@ body {
 }
 
 .box__icons {
-    margin: 42px 120px;
+    margin: 0 auto;
 }
 
+@media screen and (max-width: 850px){
+.menu{
+    display: none;
+}
+.nav__menu-btn {
+    
+    display: block;
+  }
+  .box__icons{
+    margin: 0 auto;
+     padding-top: 30px;
+    }
+    .text__title{
+        font-size: 28px;
+    }
+}
