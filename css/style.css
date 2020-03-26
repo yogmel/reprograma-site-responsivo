@@ -91,4 +91,4 @@ body {
 .box__icons {
     margin: 42px 120px;
 }
-
+@media screen and(max-width 860px)
