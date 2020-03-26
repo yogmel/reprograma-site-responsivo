@@ -22,6 +22,7 @@ body {
     justify-content: space-between;
 }
 
+
 .nav { /*engloba o a ul (menu)*/
 }
 
@@ -91,4 +92,21 @@ body {
 .box__icons {
     margin: 42px 120px;
 }
+
+@media screen and (max-width: 850px) {
+    .header {
+        padding: 40px 130px;
+        background: url(../images/header.png) no-repeat center center / cover;
+        /* height: 730px; */
+        /* width: 100%; */
+        justify-content: center;        
+}
+    .wrapper {
+    display: none;
+
+    }
+}
+
+
+
 
