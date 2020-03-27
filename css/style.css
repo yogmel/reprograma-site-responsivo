@@ -1,94 +1,112 @@
-body {
+html {
+    font-size: 10px;
     font-family: 'Lato', sans-serif;
 }
 
-.header { /*engloba a imagem e a nav*/
-    padding: 40px 130px;
+header {
     background: url(../images/header.png) no-repeat center center / cover;
-    /* mesma coisa:
-    background-image: url(../img/header.png);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    */
-    height: 730px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
+   height: 600px;
+   width: 100%;
+   background-size: cover;
 
+}
 .wrapper {
+padding: 30px;
+    background-color: #7E459B;
     display: flex;
     justify-content: space-between;
+    font-size: 1.4rem;
 }
 
-.nav { /*engloba o a ul (menu)*/
+.nav {
+    display: none;
 }
 
-.menu { /* engloba cada item da lista (li) */
-    display: flex;
+.menu {
+    list-style: none;
+    
 }
 
-.menu__item { /*engloba o link*/
-    margin: 0 16px;
-    padding: 8px;
+.menu__item {
+    display: inline-block;
 }
 
 .menu__item__link {
-    font-size: 21px;
+    color: #fff;
     text-decoration: none;
-    color: #FFF;
+    padding: 18px;
+    justify-content: end;
+
 }
 
-.text { /* engloba o title h1 e o subtitle p */
-    color: #FFF;
-    width: 400px;
-    margin-top: auto;
+.nav__menu-btn {
+    display: inline-block;
+    justify-content: flex-end;
 }
 
-.text__title { /* é irmão do text__subtitle */
-    font-size: 72px;
+.text {
+    color: #fff;
+    margin-top: 270px;
+    padding: 20px;
+
 }
 
-.text__subtitle { /* é irmão do text__title */
-    font-size: 24px;
-    width: 400px;
-    margin-bottom: 34px; /* adiciona margem abaixo do elemento subtitulo */
+.text__title {
+    font-size: 4.0rem;
+}
+
+.text__subtitle {
+    font-size: 1.6rem;
+    
 }
 
 .btn {
-    text-transform: uppercase; /* transforma todas as letras em letras maiusculas */
-    font-size: 18px;
-    border-radius: 28px;
-    padding: 16px 45px;
     text-decoration: none;
-    font-weight: 600; /* deixa a letra mais grossa */
-    display: inline-block; /* transforma o link em um elemento
-    inline-block, sem isso o link será inline e ficaria 
-    tomando espaço do título */
+    border-radius: 27%;
+    margin: 20px 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 15px 20px;
+    display: inline-block;
 }
 
 .btn__primary {
     color: #7E459B;
-    background: #FFF;
-    margin-right: 22px; /* adiciona margem ao lado direito do elemento */
+    background: #fff;
+    margin-right: 22px;
 }
 
 .btn__secondary {
-    background: rgba(0, 0, 0, 0); /* deixa o fundo transparente */
-    border: 2px solid #FFF;
-    color: #FFF;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 .box {
-    width: 500px;
+    padding: 25px;
+    text-align: center;
 }
 
-.box--right {
-    margin-left: auto;
+.box__icon {
+    max-width: 200px;
+    padding: 15px;
 }
 
-.box__icons {
-    margin: 42px 120px;
+.box__text {
+    font-size: 1.4rem;
+
 }
 
+@media screen and (min-width: 600px) {
+    .nav__menu-btn {
+        display: none;
+    }
+    
+    .nav {
+        display: block;
+    }
+
+    .wrapper {
+        background: transparent;
+    }
+}
