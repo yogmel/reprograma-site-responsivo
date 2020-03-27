@@ -39,6 +39,9 @@ body {
     text-decoration: none;
     color: #FFF;
 }
+.menu__item__btn{
+    display: none;
+}
 
 .text { /* engloba o title h1 e o subtitle p */
     color: #FFF;
@@ -79,7 +82,9 @@ body {
     border: 2px solid #FFF;
     color: #FFF;
 }
-
+.menu__btn{
+    display: none;
+}
 .box {
     width: 500px;
 }
@@ -91,4 +96,11 @@ body {
 .box__icons {
     margin: 42px 120px;
 }
-@media screen and(max-width 860px)
+
+
+@media screen and (max-width 860px) {
+.menu__btn{
+display:block;
+    
+ }
+}
