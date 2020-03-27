@@ -1,9 +1,17 @@
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
 
+p, button {
+    font-size: 1.6rem;
+}
+
 .header { /*engloba a imagem e a nav*/
-    padding: 40px 130px;
+    padding: 4rem 13rem;
     background: url(../images/header.png) no-repeat center center / cover;
     /* mesma coisa:
     background-image: url(../img/header.png);
@@ -35,30 +43,34 @@ body {
 }
 
 .menu__item__link {
-    font-size: 21px;
+    font-size: 2.1rem;
     text-decoration: none;
     color: #FFF;
 }
 
+.nav__menu-btn {
+    display: none;
+}
+
 .text { /* engloba o title h1 e o subtitle p */
     color: #FFF;
-    width: 400px;
+    max-width: 400px;
     margin-top: auto;
 }
 
 .text__title { /* é irmão do text__subtitle */
-    font-size: 72px;
+    font-size: 7.2rem;
 }
 
 .text__subtitle { /* é irmão do text__title */
-    font-size: 24px;
-    width: 400px;
+    font-size: 2.4rem;
+    max-width: 400px;
     margin-bottom: 34px; /* adiciona margem abaixo do elemento subtitulo */
 }
 
 .btn {
     text-transform: uppercase; /* transforma todas as letras em letras maiusculas */
-    font-size: 18px;
+    font-size: 1.8rem;
     border-radius: 28px;
     padding: 16px 45px;
     text-decoration: none;
@@ -81,7 +93,7 @@ body {
 }
 
 .box {
-    width: 500px;
+    max-width: 500px;
 }
 
 .box--right {
@@ -92,3 +104,31 @@ body {
     margin: 42px 120px;
 }
 
+/* MEDIA QUERY */
+@media screen and (max-width: 860px) {
+    html {
+        font-size: 8px;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .nav__menu-btn {
+        display: block;
+    }
+    
+    .header {
+        padding: 4rem;
+    }
+    
+    .box__icons {
+        margin: 0;
+        padding: 3rem;
+    }
+
+    .text__title {
+        font-size: 3rem;
+    }
+    
+}
