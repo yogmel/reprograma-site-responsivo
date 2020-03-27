@@ -1,94 +1,110 @@
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-.header { /*engloba a imagem e a nav*/
-    padding: 40px 130px;
-    background: url(../images/header.png) no-repeat center center / cover;
-    /* mesma coisa:
-    background-image: url(../img/header.png);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    */
-    height: 730px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 
 .wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+.header {
+    background: url(../images/header.png) no-repeat center center / cover;
 }
 
-.nav { /*engloba o a ul (menu)*/
+.menu {
+    display: none;
 }
 
-.menu { /* engloba cada item da lista (li) */
-    display: flex;
+.menu__hambuguer, .text__title, .text__subtitle{
+    color: #FFF;
 }
 
-.menu__item { /*engloba o link*/
-    margin: 0 16px;
-    padding: 8px;
-}
-
-.menu__item__link {
-    font-size: 21px;
+.menu__hambuguer   {
     text-decoration: none;
-    color: #FFF;
+    display: block;
+    font-size: 32px;
+   
 }
 
-.text { /* engloba o title h1 e o subtitle p */
-    color: #FFF;
-    width: 400px;
-    margin-top: auto;
+.text__title {
+    font-size: 38px;
+    padding: 5px 20px;
+    margin-top: 50px;
 }
 
-.text__title { /* é irmão do text__subtitle */
-    font-size: 72px;
+.text__subtitle {
+    padding: 5px 20px;
 }
 
-.text__subtitle { /* é irmão do text__title */
-    font-size: 24px;
-    width: 400px;
-    margin-bottom: 34px; /* adiciona margem abaixo do elemento subtitulo */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box img {
+    max-width: 280px;
+    max-height: 290px;
+}
+
+.box__text, .box__icon {
+        margin: 20px 0;
+        padding: 20px;
+        font-size: 18px;
 }
 
 .btn {
-    text-transform: uppercase; /* transforma todas as letras em letras maiusculas */
-    font-size: 18px;
+    text-transform: uppercase;
+    font-size: 14px;
     border-radius: 28px;
-    padding: 16px 45px;
+    padding: 16px 30px;
     text-decoration: none;
-    font-weight: 600; /* deixa a letra mais grossa */
-    display: inline-block; /* transforma o link em um elemento
-    inline-block, sem isso o link será inline e ficaria 
-    tomando espaço do título */
+    display: inline-block;
+    margin: 5px 10px;
+    margin-bottom: 30px;
 }
 
 .btn__primary {
     color: #7E459B;
     background: #FFF;
-    margin-right: 22px; /* adiciona margem ao lado direito do elemento */
+    margin-right: 5px;
 }
 
 .btn__secondary {
-    background: rgba(0, 0, 0, 0); /* deixa o fundo transparente */
+    background: rgba(0, 0, 0, 0); 
     border: 2px solid #FFF;
     color: #FFF;
+
 }
 
-.box {
-    width: 500px;
+@media screen and (min-width: 768px){
+    .menu {
+        display: flex;
+    }
+
+    .menu__hambuguer   {
+        display: none;
+       
+    }
+
+    .wrapper {
+        background-color: transparent;
+    }
+
+    .menu li a {
+        text-decoration: none;
+
+    }
+
+    .box--right{
+        text-align: right;
+    }
+
+
 }
 
-.box--right {
-    margin-left: auto;
-}
-
-.box__icons {
-    margin: 42px 120px;
-}
-
+/* 420px (mobile)
+   768px
+   1024px
+   1280px
+*/
