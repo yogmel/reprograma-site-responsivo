@@ -1,94 +1,36 @@
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-.header { /*engloba a imagem e a nav*/
-    padding: 40px 130px;
-    background: url(../images/header.png) no-repeat center center / cover;
-    /* mesma coisa:
-    background-image: url(../img/header.png);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    */
-    height: 730px;
-    width: 100%;
+.wrapper{
+    
     display: flex;
-    flex-direction: column;
-}
-
-.wrapper {
-    display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
+    
+}
+.nav{
+    display: none;
 }
 
-.nav { /*engloba o a ul (menu)*/
+.header{
+    background-image:url(../images/header.png);
+    background-size: cover;
+    min-width: ;height: 400px;
+}
+.text-title{
+    display: block;
+
 }
 
-.menu { /* engloba cada item da lista (li) */
-    display: flex;
+
+@media screen and (min-width:768px){
+
 }
 
-.menu__item { /*engloba o link*/
-    margin: 0 16px;
-    padding: 8px;
+@media screen and (min-width:1024px){
+    
 }
 
-.menu__item__link {
-    font-size: 21px;
-    text-decoration: none;
-    color: #FFF;
+@media screen and (min-width:1280px){
+    
 }
 
-.text { /* engloba o title h1 e o subtitle p */
-    color: #FFF;
-    width: 400px;
-    margin-top: auto;
-}
-
-.text__title { /* é irmão do text__subtitle */
-    font-size: 72px;
-}
-
-.text__subtitle { /* é irmão do text__title */
-    font-size: 24px;
-    width: 400px;
-    margin-bottom: 34px; /* adiciona margem abaixo do elemento subtitulo */
-}
-
-.btn {
-    text-transform: uppercase; /* transforma todas as letras em letras maiusculas */
-    font-size: 18px;
-    border-radius: 28px;
-    padding: 16px 45px;
-    text-decoration: none;
-    font-weight: 600; /* deixa a letra mais grossa */
-    display: inline-block; /* transforma o link em um elemento
-    inline-block, sem isso o link será inline e ficaria 
-    tomando espaço do título */
-}
-
-.btn__primary {
-    color: #7E459B;
-    background: #FFF;
-    margin-right: 22px; /* adiciona margem ao lado direito do elemento */
-}
-
-.btn__secondary {
-    background: rgba(0, 0, 0, 0); /* deixa o fundo transparente */
-    border: 2px solid #FFF;
-    color: #FFF;
-}
-
-.box {
-    width: 500px;
-}
-
-.box--right {
-    margin-left: auto;
-}
-
-.box__icons {
-    margin: 42px 120px;
-}
 
