@@ -101,7 +101,7 @@ body {
     .header {
         padding: 40px 100px;
         background: url(../images/header.png);
-        background-position: -315px center ;
+        background-position: -315pxm center ;
         width: 100%;
         display: flex;
         flex-direction: column;
