@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-    /*engloba a imagem e a nav*/
+    /*engloba a imagem e a  nav*/
     padding: 40px 130px;
     background: url(../images/header.png) no-repeat center center / cover;
     /* mesma coisa:
