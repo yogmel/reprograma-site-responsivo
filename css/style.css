@@ -84,7 +84,7 @@ padding: 30px;
 
 .box {
     padding: 25px;
-    text-align: center;
+    
 }
 
 .box__icon {
@@ -111,5 +111,45 @@ padding: 30px;
         font-size: 2.4rem;
     }
 
+    .text  {
+        margin-top: 160px;
+        margin-left: 60px;
+    }
 
+    .text__title {
+        font-size: 7.2rem;
+    }
+    .text__subtitle {
+        font-size: 2.4rem;
+        max-width: 500px;
+    }
+
+    .btn {
+        padding: 20px 45px;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    .box {
+        padding: 25px;
+        
+    }
+    
+    .box__icon {
+        max-width: 500px;
+        padding: 15px;
+        margin: 42px 120px;
+    }
+    
+    .box__text {
+        font-size: 1.8rem;
+        max-width: 500px;
+    
+    }
+    .box--right {
+        text-align: right;
+
+    }
+    
+    
 }
